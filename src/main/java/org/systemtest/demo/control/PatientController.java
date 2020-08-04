@@ -22,7 +22,7 @@ public class PatientController {
 
     @GetMapping("/allpatient")
     public String getAllPatient(){
-        return gson.toJson(new ResultData<>(patientService.getAllPatients()));
+        return gson.toJson(new ResultData<>(ResponseEnum.WAITING_CHECK,patientService.getAllPatients()));
     }
 
     @GetMapping("/patientid")

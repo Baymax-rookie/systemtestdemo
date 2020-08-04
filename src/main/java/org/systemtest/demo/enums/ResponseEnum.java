@@ -11,6 +11,7 @@ public enum ResponseEnum {
     /**
      * 数据插入成功
      * */
+    WAITING_CHECK(1,"待就诊"),
     INSERT_SUCCESS(1,"数据插入成功"),
     OPERATION_SUCCESS(1,"操作成功"),
     INFORM_SUCCESS(1,"数据获取成功"),
